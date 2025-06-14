@@ -24,3 +24,14 @@ AIHawk has been featured by major media outlets for revolutionizing how job seek
 [**Vanity Fair**](https://www.vanityfair.it/article/intelligenza-artificiale-candidature-di-lavoro)
 [**404 Media**](https://www.404media.co/i-applied-to-2-843-roles-the-rise-of-ai-powered-job-application-bots/)
 
+
+## Streamlit interface
+
+Install the package in editable mode and launch the web UI:
+
+```bash
+pip install -e .
+aihawk-streamlit
+```
+
+The interface lets you upload a resume, choose a style and generate resumes or cover letters directly from your browser.
