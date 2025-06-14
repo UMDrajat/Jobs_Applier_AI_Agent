@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jobs-applier-ai-agent"
+version = "0.1.0"
+description = "AIHawk tools for generating resumes and cover letters"
+authors = [{name="AI Hawk FOSS"}]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["streamlit"]
+
+[tool.setuptools.packages.find]
+include = ["src*"]
+
+[tool.setuptools]
+py-modules = ["main", "src.streamlit_app"]
+
+[project.scripts]
+aihawk-cli = "main:main"
+aihawk-streamlit = "src.streamlit_app:main"
